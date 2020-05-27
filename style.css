@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* variables */
 :root{
     --main-color: #ec5252;
     --main-background: #29303b;
