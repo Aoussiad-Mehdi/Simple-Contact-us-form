@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color: #ec5252;
+    --main-background: #29303b;
+    --box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+body{
+    background: var(--main-background); 
+    width: 100%;
+    min-height: 100vh;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    -moz-display: flex;
+    -webkit-display: flex;
+    -o-display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section{
+    width: 100%;
+    min-height: 400px;
+}
+h1{
+    text-align: center;
+    font-size: 45px;
+    font-family: sans-serif;
+    font-weight: 800;
+    color: white;
+}
+form{
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    -moz-display: flex;
+    -webkit-display: flex;
+    -o-display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.left{
+    flex: 60%;
+
+    
+}
+.right{
+    flex: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    outline: none;
+    width: 230px;
+    margin-left: 20px;
+    font-size: 17px;
+}
+label{
+    color: aliceblue;
+}
+textarea:focus{
+    border: 2px solid var(--main-color);
+}
+input:focus{
+    border: 2px solid var(--main-color);
+    
+}
+input[type="submit"]{
+    background: var(--main-color);
+    color: white;
+    cursor: pointer;
+    font-weight: 19px;
+    transition: .4s ease all;
+}
+input[type="submit"]:hover{
+    background: #e93333;
+}
+/* media querries for small screens */
+@media (max-width:700px){
+    h1{
+        font-size: 35px;
+    }
+}
